@@ -12,7 +12,8 @@ export default function InputTodo() {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(body)
-        })
+        });
+        window.location = "/";
        } catch (err) {
           console.error(err.message) 
        }
